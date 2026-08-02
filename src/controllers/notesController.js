@@ -1,6 +1,12 @@
 import createHttpError from 'http-errors';
 import { Note } from '../models/note.js';
 
+export const notes = async (req, res) => {
+  res.status(200).json({
+    message: 'Server is running',
+  });
+};
+
 export const getNotes = async (req, res) => {
   const notes = await Note.find();
   res.status(200).json(notes);

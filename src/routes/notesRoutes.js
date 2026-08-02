@@ -1,7 +1,13 @@
 import { Router } from 'express';
-import { getNotes, getNoteById } from '../controllers/notesController.js';
+import {
+  notes,
+  getNotes,
+  getNoteById,
+} from '../controllers/notesController.js';
 
 const router = Router();
+
+router.get('/', notes);
 
 router.get('/notes', getNotes);
 
