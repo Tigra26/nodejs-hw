@@ -4,7 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "format": "prettier --write src/**/*.js",
+    "lint": "eslint src/**/*.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +22,7 @@
     "prettier": "^3.9.6"
   },
   "dependencies": {
+    "celebrate": "^15.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
