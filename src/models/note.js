@@ -36,9 +36,11 @@ const setMongooseUpdateRules = function () {
   });
 };
 
-noteSchema.post('save', handleMongooseError);
+noteSchema.index({ tag: 1 });
 
 noteSchema.pre('findOneAndUpdate', setMongooseUpdateRules);
+
+noteSchema.post('save', handleMongooseError);
 
 noteSchema.post('findOneAndUpdate', handleMongooseError);
 

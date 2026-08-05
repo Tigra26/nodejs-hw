@@ -16,6 +16,10 @@ export const getAllNotesSchema = {
     tag: Joi.string().valid(...TAGS),
 
     search: Joi.string().allow('').default(''),
+
+    sortBy: Joi.string().valid('_id', 'tag').default('_id'),
+
+    sortOrder: Joi.string().valid('asc', 'desc').default('asc'),
   }),
 };
 
