@@ -11,9 +11,12 @@
     "lint": "eslint src/**/*.js"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Alena Shykova",
+    "url": "https://github.com/Tigra26"
+  },
   "license": "ISC",
-  "description": "",
+  "description": "REST API for managing notes with Express, MongoDB, Mongoose, and Celebrate validation",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.8.0",
