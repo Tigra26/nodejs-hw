@@ -16,7 +16,7 @@
     "url": "https://github.com/Tigra26"
   },
   "license": "ISC",
-  "description": "REST API for managing notes with Express, MongoDB, Mongoose, and Celebrate validation",
+  "description": "REST API for managing notes using Express, MongoDB, Mongoose, Celebrate, and authentication",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.8.0",
@@ -25,7 +25,9 @@
     "prettier": "^3.9.6"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "celebrate": "^15.0.3",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
