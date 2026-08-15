@@ -30,6 +30,6 @@ export const authenticate = async (req, res, next) => {
     throw createHttpError(401);
   }
 
-  res.user = user;
+  req.user = user;
   next();
 };
