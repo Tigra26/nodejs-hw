@@ -16,7 +16,7 @@
     "url": "https://github.com/Tigra26"
   },
   "license": "ISC",
-  "description": "REST API for managing notes using Express, MongoDB, Mongoose, Celebrate, and authentication",
+  "description": "REST API for managing notes with authentication, email, and Cloudinary image uploads",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.8.0",
