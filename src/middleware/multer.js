@@ -17,12 +17,7 @@ export const upload = multer({
     if (allowedTypes.includes(file.mimetype)) {
       cb(null, true);
     } else {
-      cb(
-        new Error(
-          'Invalidfile type. Only JPEG, PNG, GIF, and WebP are allowed.',
-        ),
-        false,
-      );
+      cb(new Error('Only images allowed'), false);
     }
   },
 });
