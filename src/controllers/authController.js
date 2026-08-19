@@ -173,6 +173,6 @@ export const resetPassword = async (req, res) => {
   });
 
   res.status(200).json({
-    message: 'Password reset successfully. Please log in again.',
+    message: 'Password reset successfully',
   });
 };
